@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📝 Ma To-Do List</h1>
+            <p>Organise tes tâches facilement</p>
+        </header>
+
+        <div class="input-section">
+            <input 
+                type="text" 
+                id="taskInput" 
+                placeholder="Quelle est ta prochaine tâche ?"
+                maxlength="100"
+            >
+            <button id="addBtn" class="add-button">
+                ➕ Ajouter
+            </button>
+        </div>
+
+        <div class="stats">
+            <span id="taskCount">0 tâche(s)</span>
+            <button id="clearAll" class="clear-button">Tout supprimer</button>
+        </div>
+
+        <div id="taskList" class="task-list">
+            <!-- Les tâches apparaîtront ici -->
+        </div>
+
+        <footer>
+            <p>✨ Fini tes tâches comme un champion !</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
